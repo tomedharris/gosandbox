@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescribeInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  <requestId>req-12345</requestId>
+  <reservationSet>
+    <item>
+      <reservationId>r-12345678</reservationId>
+      <ownerId>123456789012</ownerId>
+      <instancesSet>
+        <item>
+          <instanceId>i-1234567890abcdef0</instanceId>
+          <instanceState>
+            <name>running</name>
+          </instanceState>
+          <tagSet>
+            <item>
+              <key>IsSandbox</key>
+              <value>True</value>
+            </item>
+            <item>
+              <key>SandboxName</key>
+              <value>test-sandbox</value>
+            </item>
+          </tagSet>
+        </item>
+      </instancesSet>
+    </item>
+  </reservationSet>
+</DescribeInstancesResponse>
